@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Practice</title>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inputContent">
+            <h1 id="head">Delivery Eligibility</h1>
+            <div id="content">
+                <input type="number" name="pincode" id="pincode" required placeholder="Enter Pincode">
+                <button id="checkPinCode">Check</button>
+            </div>
+            <button class="checkAgain">Check Again</button>
+        </div>
+        <div class="resultContent">
+            <div class="deliveryWithCOD del">
+                <div class="icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="txt">
+                    <h2>Delivery Available With COD</h2>
+                </div>
+                <button class="checkAgain">Check Again</button>
+            </div>
+
+            <div class="deliveryWithoutCOD del">
+                <div class="icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="txt">
+                    <h2>Delivery Available Without COD</h2>
+                </div>
+                <button class="checkAgain">Check Again</button>
+            </div>
+
+            <div class="noDelivery del">
+                <div class="icon">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="txt">
+                    <h2>Delivery Not Available</h2>
+                </div>
+                <button class="checkAgain">Check Again</button>
+            </div>
+
+            <div class="error del">
+                <div class="icon">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <div class="txt">
+                    <h2>Enter A Valid Pincode</h2>
+                </div>
+                <button class="checkAgain">Check Again</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
